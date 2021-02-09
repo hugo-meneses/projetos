@@ -14,7 +14,6 @@ class DogController extends Controller
         return Dog::all();
         
     }
-
    
     public function store(Request $request)
     {
@@ -27,34 +26,44 @@ class DogController extends Controller
       public function show($id)
     {
         $dog = Dog::find($id);
+
         if(isset($dog)){
+            
             return $dog;
+
         }else{
+            
             return response()->json([
                 "Mensagem" => "Registro não encontrado!"
               ], 404);
+
         }
     }
- 
-   
+    
     public function update(Request $request, $id)
     {
         $dog = Dog::findOrFail($id);
         $dog->update($request->all());
-        return response()->json([
-            "Mensagem" => "Atualizado com Sucesso!"
-          ], 200);
+
+            return response()->json([
+                "Mensagem" => "Atualizado com Sucesso!"
+            ], 200);
     }
 
     public function destroy($id)
     {
         $dog = Dog::find($id);
+        
         if(isset($dog)){
+        
         $dog->delete();
-        return response()->json([
-            "Mensagem" => "Deletado com Sucesso!"
-          ], 200);
+        
+            return response()->json([
+                "Mensagem" => "Deletado com Sucesso!"
+            ], 200);
+
         }else{
+
             return response()->json([
                 "Mensagem" => "Registro não encontrado!"
               ], 404);
