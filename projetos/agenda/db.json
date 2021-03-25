@@ -1,0 +1,25 @@
+{
+  "tarefas": [
+    {
+      "id": 1,
+      "descricao": "Aprendendo crud agenda no curso",
+      "dt_previsao": "2021-03-22",
+      "dt_conclusao": "2021-03-25",
+      "observacao": "Lembrete de verificar o equipamento"
+    },
+    {
+      "id": 2,
+      "descricao": "Aprendendo laravel",
+      "dt_previsao": "2021-03-23",
+      "dt_conclusao": null,
+      "observacao": "Não verificar o equipamento"
+    },
+    {
+      "descricao": "Nova Tarefa",
+      "dt_previsao": "2021-03-26",
+      "dt_conclusao": null,
+      "observacao": "Adicionando observação\n---\n❤",
+      "id": 3
+    }
+  ]
+}
