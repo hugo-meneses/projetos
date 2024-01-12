@@ -1,15 +1,21 @@
-Instale as dependencias :
-composer install
+<h4 align="center"> 
+	🚧  Laravel Blog 🚀 Em construção...  🚧
+</h4>
 
-Configure o ambiente: 
-cp .env.example .env
+# Instale as dependencias :
+$ composer install
 
-Autenticação da aplicação:
-php artisan key:generate
+# Configure o ambiente: 
+$ cp .env.example .env
 
-Popule o banco de dados mysql
-php artisan migrate:refresh --seed
+# Autenticação da aplicação:
+$ php artisan key:generate
 
-Rode o servidor
-php artisan serve
-http://127.0.0.1:8000/
+# Inserir dados no Banco de dados mysql:
+$ php artisan migrate:refresh --seed
+
+# Rode o servidor:
+$ php artisan serve
+
+# Url da aplicação:
+$ http://127.0.0.1:8000/
